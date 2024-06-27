@@ -21,8 +21,7 @@ async def main():
     await app.start()
     print("Bot is running...")
 
-    # Keep the bot running until stopped
-    await idle()
+
 
 
 if __name__ == "__main__":
