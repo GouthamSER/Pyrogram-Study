@@ -13,16 +13,27 @@ PORT_CODE = environ.get("PORT", "8080")
 # Create a new Client instance
 bot = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
+class Bot(Client):
 
-async def main():
-    await bot.start()
+    def __init__(self):
+        super().__init__(
+            name=SESSION,
+            api_id=API_ID,
+            api_hash=API_HASH,
+            bot_token=BOT_TOKEN,
+            workers=50,
+            plugins={"root": "plugins"},
+            sleep_threshold=5,
+        )
+    async def start(self):
+        await super().start()
+        print("BotStarted...")
+        
         client = webserver.AppRunner(await bot_run())
         await client.setup()
         bind_address = "0.0.0.0"
         await webserver.TCPSite(client, bind_address,
         PORT_CODE).start()
-        
-    print("Bot is running...")
 
 
 @bot.on_message(filters.command("start"))
