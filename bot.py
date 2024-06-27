@@ -14,7 +14,7 @@ bot = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 
 async def main():
     await bot.start()
-    print("Bot is running.../!\")
+    print("Bot is running...")
 
 
 @bot.on_message(filters.command("start"))
