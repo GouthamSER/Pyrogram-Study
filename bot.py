@@ -5,9 +5,9 @@ from aiohttp import web as webserver
 from pyrogram import Client, filters
 
 # Define your API ID, API Hash, and Bot Token
-API_ID = int(environ['API_ID'])
-API_HASH = environ['API_HASH']
-BOT_TOKEN = environ['BOT_TOKEN']
+API_ID = "18979569"
+API_HASH = "45db354387b8122bdf6c1b0beef93743"
+BOT_TOKEN = "7195222206:AAF872uXy9TQN9lLn16iPQ-ITDD_VHWmo5I"
 PORT_CODE = environ.get("PORT", "8080")
 
 # Create a new Client instance
