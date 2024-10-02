@@ -1,3 +1,5 @@
 pyrogram
 tgcrypto
-aiohttp
+aiohttp==3.8.3
+Flask
+gunicorn
