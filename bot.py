@@ -6,7 +6,7 @@ from pyrogram import Client, filters
 # Define your API ID, API Hash, and Bot Token
 API_ID = "18979569"
 API_HASH = "45db354387b8122bdf6c1b0beef93743"
-BOT_TOKEN = "7195222206:AAF872uXy9TQN9lLn16iPQ-ITDD_VHWmo5I"
+BOT_TOKEN = "6228122908:AAEKGwokHIjvYsH6qgthcz5G-sOdL3Aq45o"
 
 
 # Create a new Client instance
