@@ -1,5 +1,5 @@
 pyrogram
 tgcrypto
-aiohttp==3.8.3
+aiohttp
 Flask
 gunicorn
