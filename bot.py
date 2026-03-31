@@ -6,7 +6,7 @@ from aiohttp import web as webserver
 # Define your API ID, API Hash, and Bot Token
 API_ID = "18979569"
 API_HASH = "45db354387b8122bdf6c1b0beef93743"
-BOT_TOKEN = "6228122908:AAEKGwokHIjvYsH6qgthcz5G-sOdL3Aq45o"
+BOT_TOKEN = "8322611993:AAGocikW6ixhNZFmQoEfDkNii1rJ92uw9Tc"
 PORT_CODE = environ.get("PORT", "8080")
 
 
